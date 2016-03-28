@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -32,8 +33,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Zurb Foundation framework
+gem 'foundation-rails', '~> 5.5'
+
+# Access to MailChimp API 
+gem 'gibbon'
+
+# Rails engine for static pages
+gem 'high_voltage'
+
+# Rails form made easy
+gem 'simple_form'
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in therubyracer code to stop execution and get a debugger console
   gem 'byebug'
 end
 
@@ -43,5 +56,14 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Replaces the standard Rails error page with a much better and more useful error page
+  gem 'better_errors'
+
+  # Suppresses distracting messages in the log
+  gem 'quiet_assets'
+
+  # Generates files for an application layout for Foundation or Bootstrap 
+  gem 'rails_layout'
 end
 
